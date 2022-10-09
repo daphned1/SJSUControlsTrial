@@ -76,7 +76,7 @@ void recordAccelRegisters() {
   pitch = (-180 * atan (accelY/sqrt(pow(accelX, 2) + pow(accelZ, 2)))/M_PI) - 1.17;
   roll = (180 * atan (accelX/sqrt(pow(accelY, 2) + pow(accelZ, 2)))/M_PI) + 5.41;
 }
-
+// Receiving a single number from the Serial Monitor
 void endMarker() {
   static byte ndx = 0;
   char endMarker = '\n';
