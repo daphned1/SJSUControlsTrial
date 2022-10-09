@@ -38,7 +38,6 @@ void loop() {
   endMarker();
   angle = angleInput();
   
-  
   myServo.write(angle + (offset - roll) - pitch);
   delay(10);
 
